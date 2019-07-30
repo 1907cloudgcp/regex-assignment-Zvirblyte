@@ -1,4 +1,19 @@
 Name: Silvija Zvirblyte
 
 #1 List the cities that start with the letter "Z"
-Command:
+Command: grep "^Z" cities.txt
+
+#2 List the cities that end witht the word "gan"
+Command: grep "\gan\>" cities.txt
+
+#3 List the cities that start with "A", "D" or "E"
+Command: grep "^[A,D,E]" cities.txt
+
+#4 List the cities that have "a" as their second letter, and "r" as their third letter (consider the cities with more than one word)
+Command: grep '\<.[a][r].*' cities.txt
+
+#5 List the cities that don't start with the letter "C"
+Command: grep '^[^C]' cities.txt
+
+#6 List the cities that have at least 14 characters (hint: use egrep)
+Command:    
