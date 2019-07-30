@@ -16,4 +16,10 @@ Command: grep '\<.[a][r].*' cities.txt
 Command: grep '^[^C]' cities.txt
 
 #6 List the cities that have at least 14 characters (hint: use egrep)
+Command: egrep '\S{14}' cities.txt
+
+#7 Count how many cities start with the letter "B"
+Command: grep -c '^[B]' cities.txt
+
+#8 Count how many times the letter "d" repeats
 Command:    
