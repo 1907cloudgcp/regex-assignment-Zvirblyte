@@ -1,0 +1,4 @@
+Name: Silvija Zvirblyte
+
+#1 List the cities that start with the letter "Z"
+Command:
