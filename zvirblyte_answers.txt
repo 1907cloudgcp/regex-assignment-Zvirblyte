@@ -24,9 +24,13 @@ Command: grep -c '^[B]' cities.txt
 #8 Count how many times the letter "d" repeats
 Command: grep -c 'd' cities.txt
 Issue: does not count repeats in same line
+Option from stack overflow: grep -o -n '[d]' cities.txt | cut -d : -f 1 | uniq -c
 
 #9 List the cities that end with the same letter, twice
 Command: grep -E ([a-z])\1$' cities.txt
 
 #10 List the palindrome cities with five characters
-Command: grep     
+Command: 
+thelinuxtips.com solution:
+grep -w '^\(.\)\(.\).\2\1'
+grep -E -e '^(.?){9}.?\9\8\7\6\5\4\3\2\1' cities.txt
