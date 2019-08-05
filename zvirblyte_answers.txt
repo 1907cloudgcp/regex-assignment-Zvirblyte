@@ -23,7 +23,7 @@ Command: grep -c '^[B]' cities.txt
 
 #8 Count how many times the letter "d" repeats
 Command: grep -c 'd' cities.txt
-Issue: does not count repreats in same line
+Issue: does not count repeats in same line
 
 #9 List the cities that end with the same letter, twice
 Command: grep -E ([a-z])\1$' cities.txt
